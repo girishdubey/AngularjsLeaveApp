@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Script/lib/jquery-1.8.3.min.js"></script>
+    <script src="Script/lib/angular.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div>
+        Date: {{Date}}<br />
+        Name: {{Name}}<br />
+    </div>
+    <div ng-app="testApp">
+        <div ng-controller="testController">
+            Date: {{Date}}<br />
+            Name: {{Name}}
+            <div ng-controller="mathController">
+                Date: {{Date}}<br />
+                Name: {{Name}}<br />
+            </div>
+            Date: {{Date}}<br />
+            Name: {{Name}}<br />
+        </div>
+
+    </div>
+    <script src="Script/index/app.js"></script>
+    <script src="Script/index/controller.js"></script>
+</body>
+</html>

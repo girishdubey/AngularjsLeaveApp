@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Script/lib/jquery-1.8.3.min.js"></script>
+    <script src="Script/lib/angular.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div ng-app="custApp">
+        <div ng-controller="totController">
+            <table>
+               
+                <tbody> 
+                    <tr ng-repeat="val in val3">
+                        <td ng-bind=""></td>
+                    </tr>
+                    <tr>
+                        <td ng-bind="val1"></td>
+                        <td ng-bind="val2"></td>
+                    </tr>
+                    <tr>
+                        <td ><input ng-model="Newval1" /></td>
+                        <td ><input ng-model="Newval2" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" ng-bind="(val1 + val2)"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:right"><input type="button" value="Submit" ng-click="UpdateData()" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Script/total/app.js"></script>
+    <script src="Script/total/controller.js"></script>  
+</body>
+</html>

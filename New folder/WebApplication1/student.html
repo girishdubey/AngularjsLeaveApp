@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Script/lib/jquery-1.8.3.min.js"></script>
+    <script src="Script/lib/angular.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div ng-app="stuApp">
+        <div ng-controller="stuController">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="studentname">Student Name</th>
+                        <th>Roll No</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="detail in stuDetails | orderBy:stuRollNo">
+                        <td ng-bind="detail.stuName"></td>
+                        <td ng-bind="detail.rollNo"></td>
+
+                        <td>
+                            <input type="text" name="txt" ng-model="detail.stuAttendance"/>
+                            <span ng-if="(detail.stuAttendance =='P' || detail.stuAttendance =='p')" style="background-color: green;">&nbsp;</span>
+                            <span ng-if="(detail.stuAttendance =='A')" style="background-color: red;">&nbsp;</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Script/student/app.js"></script>
+    <script src="Script/student/controller.js"></script>
+</body>
+</html>

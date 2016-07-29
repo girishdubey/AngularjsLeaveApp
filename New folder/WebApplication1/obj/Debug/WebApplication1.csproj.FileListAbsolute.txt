@@ -1,0 +1,5 @@
+E:\_project\web\oauth demo\server\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\_project\web\oauth demo\server\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\_project\web\oauth demo\server\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+E:\_project\web\oauth demo\server\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\_project\web\oauth demo\server\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

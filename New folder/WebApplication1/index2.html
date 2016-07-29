@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Script/lib/jquery-1.8.3.min.js"></script>
+    <script src="Script/lib/angular.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div ng-app="testApp">
+        <div ng-controller="testController">
+            Name:
+            <label ng-bind="Name"></label>
+            <br />
+            Name:
+            <label>{{Name}}</label><br />
+            Name:
+            <input ng-bind="Name" /><br />
+            Name:
+            <input ng-model="Name" /><br />
+        </div>
+    </div>
+    <script src="Script/index/app.js"></script>
+    <script src="Script/index/controller.js"></script>
+</body>
+</html>

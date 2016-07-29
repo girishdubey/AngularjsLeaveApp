@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="Script/lib/jquery-1.8.3.min.js"></script>
+    <script src="Script/lib/angular.js"></script>
+    <title>Demo</title>
+</head>
+<body>
+    <div ng-app="custApp">
+        <div ng-controller="custController">
+            Date format:
+            <input ng-model="format">
+            <hr />
+            Current time is: <span my-current-time="format"></span>
+            <hr />
+            Current time is: <span my-current-time="format"></span><hr />
+            Current time is: <span my-current-time="format"></span><hr />
+            Current time is: <span my-current-time="format"></span><hr />
+            Current time is: <span my-current-time="format"></span><hr />
+            Current time is: <span my-current-time="format"></span>
+        </div>
+    </div>
+    <script src="Script/main/app.js"></script>
+    <script src="Script/main/controller.js"></script>
+</body>
+</html>
